@@ -2,7 +2,7 @@ import { MaterialCommunityIcons as Icon } from '@expo/vector-icons';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { INavItem, RootDrawerParamList } from './types';
 import { DrawerContent } from './drawerContent';
-import { AppNavigator, MapNavigator } from '../navigation';
+import { AppNavigator, MapNavigator, TodoNavigator } from '../navigation';
 
 const Drawer = createDrawerNavigator<RootDrawerParamList>();
 
@@ -26,10 +26,10 @@ const baseNavList: INavItem[] = [
     title: 'Documents',
   },
   {
-    name: 'References',
-    component: AppNavigator,
-    icon: 'movie-outline',
-    title: 'References',
+    name: 'Todo',
+    component: TodoNavigator,
+    icon: 'check-box-outline',
+    title: 'Todo',
   },  
 ];
 

@@ -6,7 +6,14 @@ type MapStackParamList = {
   MapView: undefined;
 };
 
+type TodoStackParamList = {
+  TodoList: undefined;
+  TodoAdd: undefined;
+  TodoEdit: { id: string };
+};
+
 export {
   AppStackParamList,
-  MapStackParamList
+  MapStackParamList,
+  TodoStackParamList
 };
